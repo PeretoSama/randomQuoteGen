@@ -1,0 +1,78 @@
+@import "../../global.scss";
+
+.QuoteBox {
+    font-family: $font-main;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    max-height: 400px;;
+    .wrapper1 {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        h1 {
+           
+            text-align: justify;
+            font-size: 1.5rem;
+        }
+
+        .author {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+        p {
+            font-size: 1.2rem;
+       
+            text-align: left;
+        }
+    }
+
+    .wrapper2 {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        padding: 25px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        .iconsWrapper {
+            a {
+                width: 0;
+                height: 0;
+                padding: 0;
+                margin: 0
+            }
+
+            flex:1;
+            display: flex;
+            gap:20px;
+            justify-content: flex-start;
+            align-items: flex-end;
+
+        }
+
+        .newQuote {
+            button{
+                height: 30px; 
+                color: white;
+                border: 1px solid black;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+    }
+
+
+
+}
